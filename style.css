@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 0%, 8%);
+    font-family: 'Inter', serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+}
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: hsl(0, 0%, 12%);
+    width: 380px;
+    padding: 2.3rem ;
+    border-radius: 1rem;
+}
+
+.avatar{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nombre{
+    font-weight:  700;
+    font-size: 20px;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: -1rem;
+}
+
+.ubicacion{
+    font-weight: 600;
+    font-size: 14px;
+    color: hsl(75, 94%, 57%);
+}
+
+.description{
+    font-weight: 300;
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.botones button{
+    font-weight: 700;
+    font-size: 14px;
+    color:hsl(0, 0%, 100%);
+    padding: 15px;
+    width: 300px;
+    background-color: hsl(0, 0%, 20%);
+    border-style: none;
+    border-radius: 0.5rem;
+    transition: background-color 0,5s ease;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(75, 94%, 57%);
+}
+
+@media (max-width : 600px){
+   
+    .blog{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        background-color: hsl(0, 0%, 12%);
+        width: 340px;
+        padding: 3.3rem ;
+        border-radius: 1rem;
+    }
+    
+    .nombre{
+        font-size: 19px;
+    }
+    
+    .ubicacion{
+        font-size: 13px;
+    }
+    
+    .description{
+        font-size: 12px;
+    }
+    
+    .botones{
+        gap: 0.9rem;
+    }
+    
+    .botones button{
+        font-size: 13px;
+    }
+    
+}
